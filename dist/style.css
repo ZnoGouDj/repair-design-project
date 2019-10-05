@@ -1,0 +1,110 @@
+body {
+    font-family: 'Yeseva One'; }
+  
+  @font-face {
+    font-family: "FuturaDemic";
+    src: url("../assets/fonts/Futurademic.otf"); }
+  
+  @font-face {
+    font-family: "FuturaBookc";
+    src: url("../assets/fonts/Futurabookc.otf"); }
+  
+  .wrapper {
+    max-width: 1440px;
+    margin: 0 auto; }
+  
+  button {
+    background-color: #E3B873;
+    border: none;
+    -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+    border-radius: 2px;
+    color: #fff; }
+  
+  /*====  header  ===*/
+  header {
+    background-color: #131313; }
+  
+  nav {
+    font-family: "FuturaDemic";
+    font-weight: 400;
+    font-size: 14px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+    grid-template-columns: repeat(4, 1fr);
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 22px 0;
+    padding-left: 100px;
+    padding-right: 100px; }
+    nav .logo a {
+      font-family: "FuturaDemic";
+      font-weight: 400;
+      font-size: 14px;
+      color: #E3B873;
+      text-decoration: none;
+      text-transform: uppercase; }
+    nav .menu {
+      font-family: "FuturaBookc";
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+      grid-column-gap: 47px; }
+      nav .menu a {
+        font-family: "FuturaBookc";
+        color: #fff;
+        text-decoration: none; }
+    nav .tel {
+      display: -ms-grid;
+      display: grid;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      nav .tel a {
+        color: #E3B873; }
+    nav button {
+      width: 160px;
+      height: 37px; }
+  
+  /*==== main slider block ====*/
+  .main-slider-block {
+    background-color: #131313; }
+    .main-slider-block .wrapper {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: 1fr 11fr;
+      grid-template-columns: 1fr 11fr; }
+  
+  .side-bar .side-bar_link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .side-bar .side-bar_link a {
+      font-family: "FuturaDemic";
+      font-size: 14px;
+      color: #E3B873;
+      text-decoration: none;
+      text-transform: uppercase; }
+    .side-bar .side-bar_link::after {
+      display: block;
+      content: '';
+      height: 2px;
+      width: 50px;
+      background-color: #E3B873; }
+  
+  .main-slider {
+    background: url("../assets/img/main-bg.jpg");
+    background-repeat: no-repeat;
+    height: 700px; }

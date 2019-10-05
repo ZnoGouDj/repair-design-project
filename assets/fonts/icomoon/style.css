@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'icomoon';
-    src:  url('fonts/icomoon.eot?cmnkes');
-    src:  url('fonts/icomoon.eot?cmnkes#iefix') format('embedded-opentype'),
-      url('fonts/icomoon.ttf?cmnkes') format('truetype'),
-      url('fonts/icomoon.woff?cmnkes') format('woff'),
-      url('fonts/icomoon.svg?cmnkes#icomoon') format('svg');
+    src:  url('fonts/icomoon.eot?79283w');
+    src:  url('fonts/icomoon.eot?79283w#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?79283w') format('truetype'),
+      url('fonts/icomoon.woff?79283w') format('woff'),
+      url('fonts/icomoon.svg?79283w#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -27,62 +27,46 @@
   
   .icon-cam:before {
     content: "\e900";
-    color: #e3b873;
   }
   .icon-clients:before {
     content: "\e901";
-    color: #e3b873;
   }
   .icon-idea:before {
     content: "\e902";
-    color: #fff;
   }
   .icon-insta:before {
     content: "\e903";
   }
   .icon-lists:before {
     content: "\e904";
-    color: #fff;
   }
   .icon-mail:before {
-    content: "\e905";
+    content: "\1f30a";
   }
   .icon-next:before {
     content: "\e906";
-    color: #fff;
   }
   .icon-pan:before {
     content: "\e907";
-    color: #fff;
   }
   .icon-pig:before {
     content: "\e908";
-    color: #fff;
   }
   .icon-portfolio:before {
     content: "\e909";
-    color: #fff;
   }
   .icon-pre:before {
     content: "\e90a";
-    color: #fff;
   }
   .icon-project:before {
     content: "\e90b";
-    color: #e3b873;
   }
   .icon-scvare:before {
     content: "\e90c";
-    color: #fff;
   }
   .icon-team:before {
     content: "\e90d";
-    color: #e3b873;
   }
   .icon-tools:before {
     content: "\e90e";
-    color: #e3b873;
-  }
-  .icon-home2:before {
-    content: "\e90f";
   }
