@@ -1048,4 +1048,108 @@ p {
 
 .our-clients-section {
   padding-top: 90px;
+  padding-bottom: 350px;
+  .items-wrapper {
+    grid-column-gap: 54px;
+    .item-block {
+      padding: 20px;
+      padding-bottom: 0;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr auto 1fr;
+      grid-row-gap: 20px;
+      align-items: center;
+      grid-template-areas: 
+        "avatar name name"
+        "description description description"
+        "button button .";
+      box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+      
+      .avatar {
+        grid-area: avatar;
+      }
+      .name {
+        grid-area: name;
+      }
+      .description {
+        font-family: "FuturaBookc";
+        font-size: 15px;
+        line-height: 180%;
+        color: #959595;
+        text-transform: lowercase;
+        grid-area: description;
+      }
+      .button {
+        border: none;
+        width: 294px;
+        font-size: 17px;
+        margin-left: -20px;
+        grid-area: button;
+          .icon-scvare,
+          .icon-lists {
+            
+            font-size: 28px;
+            padding-right: 20px;
+          }
+         
+          .vertical-line {
+            display: flex;
+            height: 56px;
+            align-items: center;
+            
+            border-right: 1px solid #ffffff;
+            padding-right: 20px;
+            margin-right: 20px;
+          }
+          &:hover {
+            background-color: #959595;
+          }
+          &:hover .vertical-line {
+            
+            border-right: 1px solid #ffffff;
+          }
+      }
+    }
+
+  }
+  
 }
+
+
+/*==== faq-section ====*/
+
+.faq-section {
+  background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%);
+  .main-form {
+    width: 60%;
+    margin: -230px auto 0;
+
+    .form-conrol {
+      padding-left: 160px;
+      padding-right: 160px;
+      .form-title {
+        font-size: 20px;
+        text-transform: uppercase;
+      }
+      .form-section-control__item {
+        width: 100%;
+        margin-bottom: 48px;
+      }
+      .wr-item {
+        display: flex;
+        .name {
+          margin-right: 58px;
+        }
+      }
+      .check-form {
+        display: grid;
+        justify-content: center;
+        margin-bottom: 48px;
+      }
+      .button-wrapper {
+        display: grid;
+        justify-content: center;
+      }
+    }
+  } 
+}  

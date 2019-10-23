@@ -17,7 +17,8 @@ body {
 
 .wrapper {
   max-width: 1440px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  border: 1px solid red; }
 
 .button {
   background-color: #E3B873;
@@ -967,4 +968,108 @@ nav {
 
 /*==== our-clients-section  ====*/
 .our-clients-section {
-  padding-top: 90px; }
+  padding-top: 90px;
+  padding-bottom: 350px; }
+  .our-clients-section .items-wrapper {
+    grid-column-gap: 54px; }
+    .our-clients-section .items-wrapper .item-block {
+      padding: 20px;
+      padding-bottom: 0;
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+      -ms-grid-rows: 1fr 20px auto 20px 1fr;
+      grid-template-rows: 1fr auto 1fr;
+      grid-row-gap: 20px;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      grid-template-areas: "avatar name name" "description description description" "button button .";
+      -webkit-box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+      box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04); }
+      .our-clients-section .items-wrapper .item-block .avatar {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+        grid-area: avatar; }
+      .our-clients-section .items-wrapper .item-block .name {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+        -ms-grid-column-span: 2;
+        grid-area: name; }
+      .our-clients-section .items-wrapper .item-block .description {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 3;
+        font-family: "FuturaBookc";
+        font-size: 15px;
+        line-height: 180%;
+        color: #959595;
+        text-transform: lowercase;
+        grid-area: description; }
+      .our-clients-section .items-wrapper .item-block .button {
+        -ms-grid-row: 5;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 2;
+        border: none;
+        width: 294px;
+        font-size: 17px;
+        margin-left: -20px;
+        grid-area: button; }
+        .our-clients-section .items-wrapper .item-block .button .icon-scvare,
+        .our-clients-section .items-wrapper .item-block .button .icon-lists {
+          font-size: 28px;
+          padding-right: 20px; }
+        .our-clients-section .items-wrapper .item-block .button .vertical-line {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          height: 56px;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          border-right: 1px solid #ffffff;
+          padding-right: 20px;
+          margin-right: 20px; }
+        .our-clients-section .items-wrapper .item-block .button:hover {
+          background-color: #959595; }
+        .our-clients-section .items-wrapper .item-block .button:hover .vertical-line {
+          border-right: 1px solid #ffffff; }
+
+/*==== faq-section ====*/
+.faq-section {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(3.47%, rgba(24, 24, 24, 0.9)), to(rgba(24, 24, 24, 0.72)));
+  background: -webkit-linear-gradient(top, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%);
+  background: -o-linear-gradient(top, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%);
+  background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%); }
+  .faq-section .main-form {
+    width: 60%;
+    margin: -230px auto 0; }
+    .faq-section .main-form .form-conrol {
+      padding-left: 160px;
+      padding-right: 160px; }
+      .faq-section .main-form .form-conrol .form-title {
+        font-size: 20px;
+        text-transform: uppercase; }
+      .faq-section .main-form .form-conrol .form-section-control__item {
+        width: 100%;
+        margin-bottom: 48px; }
+      .faq-section .main-form .form-conrol .wr-item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        .faq-section .main-form .form-conrol .wr-item .name {
+          margin-right: 58px; }
+      .faq-section .main-form .form-conrol .check-form {
+        display: -ms-grid;
+        display: grid;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        margin-bottom: 48px; }
+      .faq-section .main-form .form-conrol .button-wrapper {
+        display: -ms-grid;
+        display: grid;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center; }
