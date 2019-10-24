@@ -134,7 +134,8 @@ p {
       left: 0; }
       .items-wrapper .item-block .button:hover {
         border: 1px solid #363636;
-        color: #131313; }
+        color: #131313;
+        background-color: #cababa; }
 
 /*==== section__description ===*/
 .section__description {
@@ -324,7 +325,12 @@ nav {
     nav .menu a {
       font-family: "FuturaBookc";
       color: #fff;
-      text-decoration: none; }
+      text-decoration: none;
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
+      nav .menu a:hover {
+        color: #ec5a5a; }
   nav .tel {
     display: -ms-grid;
     display: grid;
@@ -1073,3 +1079,35 @@ nav {
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center; }
+  .faq-section .adr-info {
+    font-family: 'Yeseva One';
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #E3B873;
+    margin-top: 52px;
+    margin-bottom: 26px; }
+  .faq-section .social-wrapper {
+    display: -ms-grid;
+    display: grid;
+    grid: 1fr/auto auto;
+    grid-gap: 15px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 43px; }
+  .faq-section .map {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 66px; }
+    .faq-section .map img {
+      width: 100%; }
+
+/*=====  footer  =====*/
+.footer {
+  background-color: #131313; 
+}
